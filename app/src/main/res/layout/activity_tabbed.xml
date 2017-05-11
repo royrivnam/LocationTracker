@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.dell.locationtracker.tabbed">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"
+        android:background="@drawable/database"
+        android:alpha="0.12"></RelativeLayout>
+
+
+
+    <FrameLayout
+        android:id="@+id/content_frame2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        />
+
+
+
+
+
+    <FrameLayout
+        android:id="@+id/content_frame1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/content_frame2"
+        android:layout_above="@+id/b1"
+        />
+
+
+</RelativeLayout>

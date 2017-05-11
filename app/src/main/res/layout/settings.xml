@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tab_layout"
+        android:background="@drawable/settings"
+        android:alpha="0.10"></RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Choose No. Of  Temporary Records:"
+        android:id="@+id/t1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:textSize="22sp"
+        android:nestedScrollingEnabled="false"
+        android:maxWidth="250dp"
+        android:textStyle="bold"
+        android:minHeight="90dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/t1"
+        android:layout_alignBottom="@+id/t1"
+        android:entries="@array/counter_arrays"
+        android:prompt="@string/counter_prompt" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  About App"
+        android:id="@+id/set"
+        android:layout_below="@+id/t1"
+        android:layout_alignParentStart="true"
+        android:layout_alignEnd="@+id/spinner"
+        android:background="#00ffffff"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:minHeight="50dp" />
+    />
+
+</RelativeLayout>
